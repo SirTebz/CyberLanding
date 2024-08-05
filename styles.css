@@ -1,0 +1,520 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url(https://db.onlinewebfonts.com/c/fd1ad3a0f95210975d2f5607501020b5?family=Norse);
+@font-face {
+  font-family: "Norse";
+  src: url("https://db.onlinewebfonts.com/t/fd1ad3a0f95210975d2f5607501020b5.eot");
+  src: url("https://db.onlinewebfonts.com/t/fd1ad3a0f95210975d2f5607501020b5.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/fd1ad3a0f95210975d2f5607501020b5.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/fd1ad3a0f95210975d2f5607501020b5.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/fd1ad3a0f95210975d2f5607501020b5.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/fd1ad3a0f95210975d2f5607501020b5.svg#Norse")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+@font-face {
+  font-family: "OnePiece-zAqL.ttf";
+  font-style: normal;
+  font-weight: normal;
+  src: local("OnePiece-zAqL.ttf"),
+    url("/fonts/OnePiece-zAqL.woff") format("woff");
+}
+
+body {
+  background: #000;
+  color: white;
+}
+
+/* HEADER CSS */
+.hero {
+  background-image: linear-gradient(
+      to right,
+      rgba(248, 108, 166, 0.1),
+      rgba(248, 108, 166, 0.3)
+    ),
+    url("./images/header/one-piece.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.logo-box {
+  font-size: 4rem;
+  font-weight: 700;
+  padding-top: 1%;
+  font-family: "Norse", sans-serif;
+  animation: slideInFromRight 0.5s ease-in-out;
+  transition: all 0.5s;
+}
+
+.logo-box:hover {
+  color: rgba(248, 108, 166, 0.9);
+  transition: all 0.5s;
+}
+
+.nav {
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-box {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.25rem;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.5s;
+}
+
+.link-box a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link:hover {
+  color: rgb(248, 108, 166);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.main-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+  flex-direction: column;
+  font-size: 5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+.main-one,
+.main-two {
+  display: block;
+  text-align: center;
+  transition: all 0.5s;
+  font-family: "Norse", sans-serif;
+}
+
+.main-one {
+  animation: slideInFromRight 1.5s ease-in-out;
+}
+
+.main-two {
+  font-size: 3.2rem;
+  letter-spacing: 0.1rem;
+  animation: slideInFromLeft 1.5s ease-in-out;
+}
+
+.main-one:hover,
+.main-two:hover {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.main-one:hover {
+  transform: translateY(-20px);
+}
+
+.main-two:hover {
+  transform: translateY(20px);
+}
+/* ******************************************************************** */
+/* Information section */
+.info {
+  background-image: linear-gradient(
+      rgba(248, 108, 166, 0.1),
+      rgba(248, 108, 166, 0.6)
+    ),
+    url("./images/info/main.jpg");
+  background-size: cover;
+  background-position: top center;
+  min-height: 100vh;
+}
+
+.info-title {
+  text-align: center;
+  padding-top: 5%;
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(247, 149, 165);
+  text-transform: uppercase;
+  font-family: "Norse", sans-serif;
+  letter-spacing: 0.3rem;
+  transition: all 0.5s;
+}
+
+.info-title:hover {
+  color: rgb(250, 114, 239);
+  translate: 0 20px;
+}
+.info-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  padding: 0 10%;
+  gap: 30px;
+  margin-top: 5rem;
+}
+
+.card {
+  width: 250px;
+  height: 320px;
+  margin: 0 auto;
+}
+
+.card h3 {
+  font-family: "Norse", sans-serif;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  transition: all 0.5s;
+}
+
+.card:hover {
+  color: rgb(248, 108, 166);
+  transition: all 0.01s;
+}
+
+.first,
+.second,
+.third{
+  background-size: cover;
+  min-height: 250px;
+  border-radius: 10px;
+  border: 3px solid rgb(248, 108, 166);
+  padding: 15px;
+  text-align: left;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  font-family: cursive;
+  color: transparent;
+}
+
+.first {
+  background-image: url("./images/info/cyber1.jpg");
+}
+
+.first:hover {
+  color: white;
+  background-image: linear-gradient(rgb(95, 69, 80), rgba(154, 103, 124, 0.6)),
+    url("./images/info/cyber1.jpg");
+}
+
+.second {
+  background-image: url("./images/info/Cyber2.png");
+}
+
+.second:hover {
+  color: white;
+  background-image: linear-gradient(rgb(95, 69, 80), rgba(154, 103, 124, 0.6)),
+    url("./images/info/Cyber2.png");
+}
+
+.third {
+  background-image: url("./images/info/Cyber3.png");
+}
+
+.third:hover {
+  color: white;
+  background-image: linear-gradient(rgb(95, 69, 80), rgba(154, 103, 124, 0.6)),
+    url("./images/info/Cyber3.png");
+}
+
+.first:hover,
+.second:hover,
+.third:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: all 1s;
+  border: 3px solid transparent;
+}
+/* **************************************************************************** */
+/* Qoute Box */
+.qoute-box {
+  min-height: 50vh;
+  background-image: linear-gradient(
+      rgba(248, 108, 166, 0.5),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("./images/quote/qoute.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
+}
+
+.qoute-text {
+  font-weight: 500;
+  font-size: 2.4rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  margin-top: 10%;
+  background: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 10px;
+  line-height: 3.6rem;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.qoute-text:hover {
+  transform: skewX(-12deg);
+  transition: all 1s;
+}
+
+/* **************************************************** */
+.cta {
+    background-image: linear-gradient(
+  rgba(248, 108, 166, 0.1),
+  rgba(248, 108, 166, 0.6)), url("./images/info/main.jpg");
+  background-size: cover;
+  background-position: top center;
+  display: flex;
+  min-height: 50vh;
+  flex-direction: row-reverse;
+  padding: 5% 10%;
+}
+
+.thor-img {
+  height: 300px;
+  width: 400px;
+  border-radius: 50px;
+  display: block;
+  margin-left: auto;
+  transition: all 1s;
+}
+
+.thor-img:hover {
+  transform: scale(110%);
+  transition: all 1s;
+  border-radius: 10px;
+}
+
+.cta-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.cta-text h4 {
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-bottom: 10px;
+}
+
+.cta-text p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+.cta-btn {
+  background: rgb(250, 85, 240);
+  color: white;
+  font-size: 16px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  width: 200px;
+  cursor: pointer;
+  animation: slideInFromRight 1s ease-in-out;
+}
+
+.cta-btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cta-btn:hover {
+  filter: contrast(340%);
+}
+/* **************************************************** */
+/* Footer */
+.footer {
+  background-image: linear-gradient(
+      10deg,
+      rgba(252, 130, 179, 0.7),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url("./images/quote/qoute.jpg");
+  background-position: center;
+  min-height: 20vh;
+  padding: 5% 0;
+  text-align: center;
+}
+
+.footer p {
+  color: #eff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: "Norse";
+}
+
+footer p span {
+  font-family: serif;
+}
+
+.footer p a {
+  color: #fff;
+  font-family: "Norse", sans-serif;
+}
+/* **************************************************** */
+/* Key Frames */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(20%);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* ************************************************** */
+/* Media queries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* header responsive */
+  .logo-box {
+    font-size: 3rem;
+    margin-top: 10%;
+  }
+
+  .link-box {
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  .main-title {
+    margin-top: 50%;
+    font-size: 3.2rem;
+  }
+
+  .main-two {
+    font-size: 2rem;
+  }
+  /* information responsive */
+  .info-title {
+    padding-top: 10%;
+    padding: 10% 10% 0 10%;
+  }
+  /* Quote responsive */
+  .qoute-box {
+    min-height: 50vh;
+    flex-direction: column;
+    padding: 10%;
+  }
+  .qoute-text {
+    font-size: 1.7rem;
+    text-align: left;
+    padding: 10px;
+    line-height: 2.6rem;
+  }
+
+  .qoute-author {
+    font-size: large;
+  }
+  /* Cta reponsive */
+  .cta {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 5% 10%;
+  }
+  .thor-img {
+    width: 250px;
+    display: inline-block;
+    margin: 10% auto;
+  }
+
+  .thor-img:hover {
+    transform: scale(105%);
+  }
+
+  .cta-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .cta-text h4 {
+    font-size: 1.7rem;
+    font-weight: 300;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    margin-bottom: 10px;
+  }
+
+  .cta-text p {
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  .cta-btn {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 150px;
+  }
+  /* Footer responsive */
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0;
+    text-align: center;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
